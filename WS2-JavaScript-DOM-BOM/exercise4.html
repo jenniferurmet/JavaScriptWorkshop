@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4</title>
+</head>
+<body>
+
+<img id="randomImage" src="" width="200">
+
+<script>
+  // Array of images
+  var images = [
+    "https://via.placeholder.com/200?text=Image+1",
+    "https://via.placeholder.com/200?text=Image+2",
+    "https://via.placeholder.com/200?text=Image+3"
+  ];
+
+  // Pick random image
+  var randomIndex = Math.floor(Math.random() * images.length);
+
+  // Change image source
+  document.getElementById("randomImage").src = images[randomIndex];
+</script>
+
+</body>
+</html>
