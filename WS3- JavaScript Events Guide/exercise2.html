@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Attributes Demo</title>
+</head>
+<body>
+
+<h1>Event Attributes Demo</h1>
+
+<form onsubmit="return submitForm()">
+    <input type="text" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<button onmouseover="hoverMessage()"
+        onmouseout="leaveMessage()">
+        Hover Button
+</button>
+
+<script>
+    function submitForm() {
+        alert("Form submitted!");
+        return false; // prevents page reload
+    }
+
+    function hoverMessage() {
+        alert("Mouse over!");
+    }
+
+    function leaveMessage() {
+        alert("Mouse out!");
+    }
+</script>
+
+</body>
+</html>

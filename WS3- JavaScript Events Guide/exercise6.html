@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Listeners</title>
+</head>
+<body>
+
+<button id="btn">Click Me</button>
+
+<script>
+    let element = document.getElementById("btn");
+
+    // This overwrites previous onclick
+    element.onclick = function() {
+        alert("First function");
+    };
+
+    element.onclick = function() {
+        alert("Second function");
+    };
+
+    // These stack (both will run)
+    element.addEventListener("click", function() {
+        alert("Third function");
+    });
+
+    element.addEventListener("click", function() {
+        alert("Fourth function");
+    });
+</script>
+
+</body>
+</html>
+

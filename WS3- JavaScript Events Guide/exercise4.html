@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Common Events</title>
+</head>
+<body onload="pageReady()">
+
+<h1>Common Events</h1>
+
+<select onchange="alert('Selection changed!')">
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
+
+<br><br>
+
+<input type="text" onkeydown="keyPressed()">
+
+<script>
+    function pageReady() {
+        alert("Page loaded!");
+    }
+
+    function keyPressed() {
+        console.log("Key pressed!");
+    }
+</script>
+
+</body>
+</html>

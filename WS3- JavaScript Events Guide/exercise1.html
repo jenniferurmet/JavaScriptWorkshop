@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Events Example</title>
+</head>
+<body onload="pageLoaded()">
+
+    <h1>Common Events Demonstration</h1>
+
+    <input type="text" onchange="alert('Input changed!')">
+
+    <button onclick="alert('Button clicked!')">Click Me</button>
+
+    <p onmouseover="this.style.color='red'"
+       onmouseout="this.style.color='black'">
+       Hover over me!
+    </p>
+
+    <script>
+        function pageLoaded() {
+            console.log("Page fully loaded!");
+        }
+    </script>
+
+</body>
+</html>
+
+
