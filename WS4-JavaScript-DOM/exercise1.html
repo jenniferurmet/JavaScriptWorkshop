@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Introduction</title>
+</head>
+<body>
+
+    <h1 id="main-title">Welcome to DOM Scripting!</h1>
+    <p class="intro-text">This is an introductory paragraph.</p>
+
+    <script>
+        // Access element by ID
+        const titleElement = document.getElementById('main-title');
+        console.log('Title Element:', titleElement.textContent);
+
+        // Access elements by class name
+        const introParagraphs = document.getElementsByClassName('intro-text');
+        console.log('Intro Paragraph:', introParagraphs[0].textContent);
+    </script>
+
+</body>
+</html>

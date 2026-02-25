@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Elements</title>
+</head>
+<body>
+
+    <h1 id="unique-id">My Unique Heading</h1>
+
+    <p class="info-text">First info paragraph.</p>
+    <p class="info-text">Second info paragraph.</p>
+
+    <div>A simple div.</div>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+    </ul>
+
+    <script>
+        // Get element by ID
+        const uniqueHeading = document.getElementById('unique-id');
+        console.log('Element by ID:', uniqueHeading.textContent);
+
+        // Get elements by class name
+        const infoParagraphs = document.getElementsByClassName('info-text');
+        console.log('First paragraph by class:', infoParagraphs[0].textContent);
+
+        // Get elements by tag name
+        const allParagraphs = document.getElementsByTagName('p');
+        console.log('Number of paragraphs:', allParagraphs.length);
+
+        // Query selector
+        const firstDiv = document.querySelector('div');
+        console.log('Div text:', firstDiv.textContent);
+
+        // Query selector all
+        const allListItems = document.querySelectorAll('ul li');
+        console.log('Number of list items:', allListItems.length);
+    </script>
+
+</body>
+</html>
